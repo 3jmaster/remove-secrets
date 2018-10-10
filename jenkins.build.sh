@@ -21,7 +21,6 @@ docker build -t ${IMG_NAME} .
 # Run
 docker run \
   --rm \
-  --network=${CTNR_NAME} \
   -d  \
   -p ${PORT}:3000 \
   --name ${CTNR_NAME} \
